@@ -1,1 +1,1 @@
-# [webquest45](https://webquest45.github.io) - Military-Patriotic quest game dedicated to the 75th anniversary of the Victory in the great Patriotic war
+# [webquest45](https://webquest45.github.io)
