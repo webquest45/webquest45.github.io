@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.min.js"></script>
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.min.js"></script>
+    <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css?family=Audiowide|Open+Sans:300,400,700&amp;subset=cyrillic,cyrillic-ext"
         rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
@@ -34,7 +34,7 @@
                 <ul class="navbar-nav ml-auto flex-nowrap">
 
                 </ul>
-                <a class="btn btn-primary" href="#game">Начать</a>
+                <a class="btn btn-primary" data-app-section="true" href="#game">Начать</a>
             </div>
         </div>
     </nav>
@@ -53,13 +53,13 @@
         </div>
     </header>
     <section class="features-icons bg-light text-center">
-        <div id="game" class="nav-tab-wrapper container">
+        <div id="game" class="app-navigaion-tab-wrapper container">
 
             <div class="row">
                 <div class="col-lg-3">
                     <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                         <div class="features-icons-icon d-flex">
-                            <a id="city-tab" class="nav-tab m-auto" href="#city"><i
+                            <a id="city-tab" data-app-section="true" class="nav-tab m-auto" href="#city"><i
                                     class="fas fa-city m-auto text-primary"></i></a>
                         </div>
                         <h3>Города</h3>
@@ -70,7 +70,7 @@
                 <div class="col-lg-3">
                     <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                         <div class="features-icons-icon d-flex">
-                            <a id="area-tab" class="nav-tab m-auto" href="#area"><i
+                            <a id="area-tab" data-app-section="true" class="nav-tab m-auto" href="#area"><i
                                     class="fas fa-globe m-auto text-primary"></i></a>
 
                         </div>
@@ -85,7 +85,7 @@
                     <div class="features-icons-item mx-auto mb-0 mb-lg-3">
                         <div class="features-icons-icon d-flex">
 
-                            <a id="history-tab" class="nav-tab m-auto" href="#history"><i
+                            <a id="history-tab" data-app-section="true" class="nav-tab m-auto" href="#history"><i
                                     class="fas fa-book m-auto text-primary"></i></a>
                         </div>
                         <h3>История</h3>
@@ -98,7 +98,7 @@
                     <div class="features-icons-item mx-auto mb-0 mb-lg-3">
                         <div class="features-icons-icon d-flex">
 
-                            <a id="polk-tab" class="nav-tab m-auto" href="#polk"><i
+                            <a id="polk-tab" data-app-section="true" class="nav-tab m-auto" href="#polk"><i
                                     class="fas fa-user m-auto text-primary"></i></a>
                         </div>
                         <h3>Полководцы</h3>
@@ -113,7 +113,7 @@
                     <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                         <div class="features-icons-icon d-flex">
 
-                            <a id="memorials-tab" class="nav-tab m-auto" href="#memorials"><i
+                            <a id="memorials-tab" data-app-section="true" class="nav-tab m-auto" href="#memorials"><i
                                     class="fas fa-monument m-auto text-primary"></i></a>
                         </div>
                         <h3>Памятники</h3>
@@ -126,7 +126,7 @@
                     <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                         <div class="features-icons-icon d-flex">
 
-                            <a id="posl-tab" class="nav-tab m-auto" href="#posl"><i
+                            <a id="posl-tab" data-app-section="true" class="nav-tab m-auto" href="#posl"><i
                                     class="fas fa-language m-auto text-primary"></i></a>
                         </div>
                         <h3>Пословицы</h3>
@@ -139,7 +139,7 @@
                     <div class="features-icons-item mx-auto mb-0 mb-lg-3">
                         <div class="features-icons-icon d-flex">
 
-                            <a id="music-tab" class="nav-tab m-auto" href="#music"><i
+                            <a id="music-tab" data-app-section="true" class="nav-tab m-auto" href="#music"><i
                                     class="fas fa-music m-auto text-primary"></i></a>
                         </div>
                         <h3>Песни</h3>
@@ -153,7 +153,7 @@
                     <div class="features-icons-item mx-auto mb-0 mb-lg-3">
                         <div class="features-icons-icon d-flex">
 
-                            <a id="puzzle-tab" class="nav-tab m-auto" href="#puzzle"><i
+                            <a id="puzzle-tab" data-app-section="true" class="nav-tab m-auto" href="#puzzle"><i
                                     class="fas fa-puzzle-piece m-auto text-primary"></i></a>
                         </div>
                         <h3>Кроссворд</h3>
@@ -200,13 +200,18 @@
         </div>
     </section>
 
+    <section class="bg-light text-center">
+        <a href="#" style="border-bottom: 1px dashed;" data-toggle="modal" data-target="#modalHelper"
+            class="text-decoration-none text-muted">Подсказки</a>
+    </section>
     <!-- Footer -->
     <footer class="footer bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
                     <p class="text-muted small mb-4 mb-lg-0">&copy; «Становится историей война…»</p>
-                    <p class="text-muted small mb-4 mb-lg-0">Военно-патриотическая квест-игра, посвященная Победе в Великой Отечественной войне</p>
+                    <p class="text-muted small mb-4 mb-lg-0">Военно-патриотическая квест-игра, посвященная Победе в
+                        Великой Отечественной войне</p>
                 </div>
 
             </div>
@@ -214,5 +219,77 @@
     </footer>
 
 </body>
+<!-- Modal -->
+<div class="modal fade" id="modalHelper" tabindex="-1" role="dialog" aria-labelledby="modalHelperTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Подсказки</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="scity-tab" data-toggle="tab" href="#scity" role="tab"
+                            aria-controls="scity" aria-selected="true">Города</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="sarea-tab" data-toggle="tab" href="#sarea" role="tab"
+                            aria-controls="sarea" aria-selected="false">Территория</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="shistory-tab" data-toggle="tab" href="#shistory" role="tab"
+                            aria-controls="shistory" aria-selected="false">История</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="spolk-tab" data-toggle="tab" href="#spolk" role="tab"
+                            aria-controls="spolk" aria-selected="false">Полководцы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="smemorials-tab" data-toggle="tab" href="#smemorials" role="tab"
+                            aria-controls="smemorials" aria-selected="false">Памятники</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="sposl-tab" data-toggle="tab" href="#sposl" role="tab"
+                            aria-controls="sposl" aria-selected="false">Пословицы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="spuzzle-tab" data-toggle="tab" href="#spuzzle" role="tab"
+                            aria-controls="spuzzle" aria-selected="false">Кроссворд</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="scity" role="tabpanel" aria-labelledby="scity-tab">
+                        <img class="rounded mx-auto d-block img-fluid" src="./img/answers/city.jpg">
+                    </div>
+                    <div class="tab-pane fade" id="sarea" role="tabpanel" aria-labelledby="sarea-tab">
+                        <img class="rounded mx-auto d-block img-fluid" src="./img/answers/area.jpg">
+                    </div>
+                    <div class="tab-pane fade" id="shistory" role="tabpanel" aria-labelledby="shistory-tab">
+                        <img class="rounded mx-auto d-block img-fluid" src="./img/answers/history.jpg">
+                    </div>
+                    <div class="tab-pane fade" id="spolk" role="tabpanel" aria-labelledby="spolk-tab">
+                        <img class="rounded mx-auto d-block img-fluid" src="./img/answers/polk.jpg">
+                    </div>
+                    <div class="tab-pane fade" id="smemorials" role="tabpanel" aria-labelledby="smemorials-tab">
+                        <img class="rounded mx-auto d-block img-fluid" src="./img/answers/memorials.jpg">
+                    </div>
+                    <div class="tab-pane fade" id="sposl" role="tabpanel" aria-labelledby="sposl-tab">
+                        <img class="rounded mx-auto d-block img-fluid" src="./img/answers/posl.jpg">
+                    </div>
+                    <div class="tab-pane fade" id="spuzzle" role="tabpanel" aria-labelledby="spuzzle-tab">
+                        <img class="rounded mx-auto d-block img-fluid" src="./img/answers/puzzle.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 </html>
